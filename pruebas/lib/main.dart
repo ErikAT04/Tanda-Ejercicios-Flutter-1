@@ -4,50 +4,58 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatefulWidget {
+class MainApp extends StatelessWidget {
   const MainApp({super.key});
-
-  @override
-  State<StatefulWidget> createState() {
-    return Estado();
-  }
-}
-
-class Estado extends State<MainApp> {
-  final _formkey =
-      GlobalKey<FormState>(); //Creo y guardo una clave para el formulario
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-            drawer: ListView(),
-            bottomNavigationBar: BottomNavigationBar(items: items),
-            body: Column(
-      children: [
-        Form(
-          key: _formkey,
-          //Formulario
-          child: Column(
-            children: [
-              TextFormField(
-                decoration: InputDecoration(
-                    labelText: "Introduce un nombre"), //Añadir texto
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Se requieren cambios';
-                  } else {
-                    return null; //No hay fallos
-                  }},)],),),
-        TextButton(
-            onPressed: () {
-              if (_formkey.currentState!.validate()) {
-                print("Enviado");
-              } else {
-                print("Hay problemas");
-              }
-            },
-            child: Text("Enviar"))
-      ],
-    )));
+      routes: {
+        "/": (context) => PantallaA(),
+        "/b": (context) => PantallaB(),
+      },
+    );
+  }
+}
+
+class PantallaA extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return EstadoA();
+  } 
+}
+class EstadoA extends State<PantallaA>{
+  String titulo = "Pantalla A";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(titulo),
+      ),
+      body: Center(
+        child: FloatingActionButton(
+          child: Text("Ir a B"),
+          onPressed: () async {
+            var txt = await Navigator.pushNamed(context, "/b");
+            setState(() {titulo = txt.toString();});
+        }),
+      ),
+    );
+  }
+}
+class PantallaB extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Pantalla B"),
+      ),
+      body: Center(
+        child: FloatingActionButton(
+          child: Text("Ir a A"),
+          onPressed: (){
+            Navigator.pop(context, "Pantalla A - Cambiada");
+        }
+        ))
+    );
   }
 }

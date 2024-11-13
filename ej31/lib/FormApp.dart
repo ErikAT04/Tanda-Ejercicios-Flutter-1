@@ -1,6 +1,6 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
+
 
 class FormApp extends StatefulWidget {
   @override
@@ -143,14 +143,13 @@ class FormAppState extends State<FormApp> {
                     List<String> data =
                         List.of([nombre, correo, pass, valorDropDown]);
                     Navigator.pushNamed(context, "/res", arguments: data);
-                  } else {
+                  }
                     setState(() {
                       errorConfirm = errorConfirm;
                       errorEmail = errorEmail;
                       errorPass = errorPass;
                       errorUname = errorUname;
                     });
-                  }
                 },
                 child: Text("Enviar"))
           ],

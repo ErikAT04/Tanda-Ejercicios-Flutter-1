@@ -26,15 +26,15 @@ class MainState extends State<MainApp> {
               children: [
                 Positioned(
                     child: Image(
-                        image: NetworkImage(
-                            "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Namecard_Background_Kinich_Ajaw.png/revision/latest/scale-to-width/360?cb=20240917101329"))),
+                        image: AssetImage(
+                            "card.webp"))),
                 const Positioned(
                   left: 20,
                   top: 20,
                   child: CircleAvatar(
                       radius: 65,
-                      backgroundImage: NetworkImage(
-                          "https://preview.redd.it/2vuy31jb9rpd1.jpeg?auto=webp&s=0764114f293e4831c6535338c2128449a2c29377")),
+                      backgroundImage: AssetImage(
+                          "profile.webp")),
                 ),
                 Positioned(
                   child: Text(st,

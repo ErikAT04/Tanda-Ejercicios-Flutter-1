@@ -17,14 +17,17 @@ class MainApp extends StatelessWidget {
             child: Container(
           width: 500,
           height: 500,
-          child: GridView.count(crossAxisCount: 2, children: <Widget>[
-            Image(image: AssetImage("assets/aaaaa.jpg")),
-            Image(
-                image: NetworkImage(
-                    "https://media.istockphoto.com/id/1296242195/es/vector/mano-agitada-dibujos-animados-moviendo-la-mano-humana-gesto-de-saludo-o-despedida-signo.jpg?s=612x612&w=0&k=20&c=2Sp3dfkXHelfYGaeKZwHg_SaeVZ6mTo0nRXYwcqQz2k="))
-          ]),
+          child: GridView.count(crossAxisCount: 2, 
+          children: List.generate(9, (index){
+            return Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage("assets/aaaaa.jpg"), fit: BoxFit.cover),
+                borderRadius: BorderRadius.all(Radius.circular(50))),
+            );
+          }),
         )),
       ),
+    )
     );
   }
 }

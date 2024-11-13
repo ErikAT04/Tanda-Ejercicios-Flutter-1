@@ -15,7 +15,7 @@ class MainApp extends StatefulWidget {
 }
 
 class MainState extends State<MainApp> {
-  List<BottomNavigationBarItem> listaBotones = List.of([
+  List<BottomNavigationBarItem> listaBotones = List.of([ //Lista de "botones"
     const BottomNavigationBarItem(
         icon: Icon(Icons.home), label: "Menú principal"),
     const BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Ajustes"),
@@ -29,11 +29,7 @@ class MainState extends State<MainApp> {
           bottomNavigationBar: BottomNavigationBar(
             items: listaBotones,
             currentIndex: currentIndex,
-            onTap: (value) {
-              setState(() {
-                currentIndex = value;
-              });
-            },
+            onTap: (value) {setState(() {currentIndex = value;});},
           ),
           body: switch (currentIndex) {
             0 => MainScreen(),
@@ -43,36 +39,24 @@ class MainState extends State<MainApp> {
     );
   }
 }
-
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Pantalla principal"),
-    );
+    return Center(child: Text("Pantalla principal"));
   }
 }
-
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Pantalla de Perfil"),
-    );
+    return Center(child: Text("Pantalla de Perfil"));
   }
 }
-
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text("Pantalla de Ajustes"),
-    );
+    return Center(child: Text("Pantalla de Ajustes"),);
   }
 }

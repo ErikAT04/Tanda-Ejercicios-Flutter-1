@@ -58,7 +58,8 @@ class MainApp extends StatelessWidget {
                 ],
               )
             ),
-            ElevatedButton(onPressed: (){if(formKey.currentState!.validate()){print("Todo correcto");}}, child: Text("Comprobar"))
+            ElevatedButton(onPressed: (){if(formKey.currentState!.validate()){
+              ;}}, child: Text("Comprobar"))
           ],
         ),
       ),

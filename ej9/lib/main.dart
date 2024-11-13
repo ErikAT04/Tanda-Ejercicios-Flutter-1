@@ -20,24 +20,28 @@ class MainState extends State<MainApp> {
     return MaterialApp(
       title: "title",
       home: Scaffold(
-        body: Stack(
+        body: Container(
+          height: 300,
+        child: Stack(
           children: [
-            Positioned(
-              left: 20,
+            Positioned.fill(child: Image(image: NetworkImage("https://www.fodors.com/wp-content/uploads/2021/05/UltimatePlayaDelCarmen__HERO_shutterstock_1161420211.jpg"), fit: BoxFit.cover,)),
+            const Positioned(
+              left: 100,
               top: 20,
-              child: const CircleAvatar(
-                radius: 50,
+              child: CircleAvatar(
+                radius: 100,
                 backgroundImage: NetworkImage(
                     "https://cdn-icons-png.flaticon.com/512/5556/5556499.png"),
               ),
             ),
             Positioned(
                 top: 80,
-                left: 80,
+                left: 150,
                 child: ElevatedButton(onPressed: () {}, child: Icon(Icons.add)))
           ],
         ),
       ),
+      )
     );
   }
 }
