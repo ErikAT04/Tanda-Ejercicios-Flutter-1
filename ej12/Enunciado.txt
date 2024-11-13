@@ -1,0 +1,2 @@
+Crea una galería de imágenes en una cuadrícula usando GridView. Aplica
+padding a cada imagen y un borde redondeado usando BoxDecoration.

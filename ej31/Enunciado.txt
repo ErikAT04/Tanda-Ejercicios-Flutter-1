@@ -1,0 +1,8 @@
+Crea un formulario que tenga:
+    1. Un email que debes validar con una expresión.
+    2. Un login que debes comprobar que no sea “admin”.
+    3. Una contraseña que sea segura (más de 8 caracteres y un símbolo).
+    4. Que valide que la contraseña y su repetición estén bien puestas.
+    5. Un DropdownButton que permite seleccionar entre “Aceptar Términos” y “No Aceptar Términos”.
+    6. Que pueda borrar el formulario con un botón.
+    7. Tras hacer el formulario, lo debe enviar a la siguiente pantalla y mostrar los datos que ha introducido.

@@ -1,0 +1,3 @@
+Con la lista de Posts que hiciste en el ejercicio de JSONPlaceholder,
+implementa que, al pulsar en uno de los posts, lo abra en otra pantalla con la
+información mostrar más visualmente

@@ -1,0 +1,3 @@
+Crea una pantalla de configuración con distintos elementos (textos,
+botones…) un switch que permita cambiar entre modo claro y modo oscuro.
+Al usar el switch, el tema de la aplicación debe cambiar de color.

@@ -1,0 +1,3 @@
+Implementa un StatefulWidget que incremente el contador al presionar el
+botón. ¿Se podría hacer con un StatelessWidget?
+ - No se puede porque el StatelessWidget no permite actualizaciones

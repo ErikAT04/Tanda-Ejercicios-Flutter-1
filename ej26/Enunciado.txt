@@ -1,0 +1,4 @@
+Crea una pantalla que se llame SeleccionColor y que contenga varios botones
+de colores. Al presionar un color, vuelve a la pantalla anterior y muestra el color
+seleccionado en un Container. (Usa Navigator.pop(context, color) para devolver
+el valor de color seleccionado).

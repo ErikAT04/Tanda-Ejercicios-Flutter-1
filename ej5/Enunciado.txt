@@ -1,0 +1,2 @@
+Crea una aplicación básica con un Scaffold que contenga una AppBar, un cuerpo de texto
+y un FloatingActionButton.

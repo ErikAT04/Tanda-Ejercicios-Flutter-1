@@ -1,0 +1,4 @@
+Crea una pantalla principal Home, y una pantalla de configuración
+Configuration. En la de configuración, incluye un Switch para activar o no el
+modo oscuro. Pasa el estado del Switch de vuelta a HomeScreen y cambia el
+tema en función del valor recibido.

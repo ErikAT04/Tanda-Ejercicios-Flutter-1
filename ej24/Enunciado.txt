@@ -1,0 +1,4 @@
+Diseña una pantalla de Login que tenga campos para el usuario y
+contraseña. Al hacer click en Iniciar Sesión, navegaremos hasta la pantalla
+PerfilUsuario pasando el nombre de usuario. En PerfilUsuario se mostrará un
+mensaje de bienvenida que incluirá el nombre de usuario.

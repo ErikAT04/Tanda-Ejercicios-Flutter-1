@@ -1,0 +1,3 @@
+Crea una pantalla FormularioNombre que permita al usuario introducir su
+nombre. Al volver a la pantalla anterior usando Navigator.pop, se mostrará el
+nombre ingresado. (Por defecto era “Invitado”)

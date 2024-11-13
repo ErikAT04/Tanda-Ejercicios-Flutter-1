@@ -1,0 +1,3 @@
+Crea una aplicación simple que muestre un mensaje de bienvenida en la
+consola en cada etapa del ciclo de vida de un widget (initState(), build(),
+dispose() )

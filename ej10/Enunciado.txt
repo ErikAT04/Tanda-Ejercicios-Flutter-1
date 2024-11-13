@@ -1,0 +1,5 @@
+Haz una lista de productos usando un ListView, donde cada elemento tenga un
+margin y un padding diferente. Añade una imagen del producto, su nombre y
+un precio. Aplica bordes y efectos de sombra para cada elemento de la lista.
+Usa para ello ListView, Container, Padding, Margin, Image, Text y
+BoxDecoration.

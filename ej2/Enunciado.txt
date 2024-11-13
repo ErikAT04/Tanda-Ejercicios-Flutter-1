@@ -1,0 +1,3 @@
+Crea una aplicación que siga una jerarquía simple de widgets utilizando un
+Column que tenga varios Text y un Button (ElevatedButton)
+• Haz que, al pulsar el botón, muestre un mensaje en la consola.

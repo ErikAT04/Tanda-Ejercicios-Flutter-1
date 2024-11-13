@@ -1,0 +1,3 @@
+Crea un formulario que tenga campos de texto para nombre, correo
+electrónico y contraseña. Añade un botón de envío que valide que todos los
+campos están completos y que el correo electrónico es correcto.

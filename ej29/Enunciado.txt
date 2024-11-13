@@ -1,0 +1,3 @@
+Crea una pantalla que tenga un fondo rojo y un contenedor azul centrado.
+Haz que, cuando pulsemos el contenedor, cambie el color del contenedor y
+el fondo al contrario.

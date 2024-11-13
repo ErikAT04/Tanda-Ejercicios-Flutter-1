@@ -1,0 +1,3 @@
+Crea una interfaz de perfil donde uses Stack para superponer una imagen de
+fondo con un avatar redondeado y un botón de edición sobre la imagen. Usa
+los widgets Stack, Positioned, Image, CircleAvatar y Button.

@@ -1,0 +1,3 @@
+Crea una barra de progreso que se rellene al presionar un botón, simulando
+una descarga. Usa LinearProgressIndicator y actualizado en función del
+porcentaje que aumenta cada vez que se presione el botón.

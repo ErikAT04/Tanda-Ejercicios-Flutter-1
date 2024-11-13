@@ -1,0 +1,3 @@
+Crea una pantalla que utilice Text, Column y Row para organizar el contenido.
+• El Column debe alinear dos textos verticalmente, y el Row alinear dos botones
+horizontalmente.

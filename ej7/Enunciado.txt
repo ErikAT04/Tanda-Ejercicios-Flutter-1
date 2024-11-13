@@ -1,0 +1,3 @@
+Diseña una tarjeta dentro de un Container con un color blanco de fondo, bordes y relleno
+personalizado. Utiliza las propiedades de margin, padding y borderRadius de Container
+para realizarlo

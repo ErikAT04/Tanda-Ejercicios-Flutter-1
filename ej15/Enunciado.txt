@@ -1,0 +1,5 @@
+Diseña una pantalla de perfil de usuario usando Stack para mostrar una
+imagen de portada (fondo), un avatar redondeado superpuesto a la izquierda,
+y el nombre del usuario a la derecha.
+1. Añade un formulario debajo que permita editar los textos, guardarlos y que
+cambien

@@ -1,0 +1,2 @@
+Obtén los datos de los posts de JSONPlaceholder y añadelos a un ListView
+con el formato adecuado.

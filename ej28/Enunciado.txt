@@ -1,0 +1,3 @@
+Crea una aplicación que tenga tres vistas: Home, Perfil y Ajustes. Cada una
+de las pantallas se tiene que poder navegar desde un widget de navegación
+inferior.
